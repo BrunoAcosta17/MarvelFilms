@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(16, 4, 82);
+}
+.header .logo {
+  float: left;
+  color: rgb(206, 152, 17);
+  font-size: 30px;
+  padding: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.header .barra {
+  float: right;
+  list-style: none;
+}
+
+.logo span {
+  color: rgb(207, 0, 0);
+}
+
+.logo u {
+  text-decoration: underline;
+}
+
+.barra ul li {
+  display: inline-block;
+}
+
+.barra ul li a {
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+  font-size: 25px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barra ul li a span {
+  font-size: 15px;
+  color: rgb(207, 0, 0);
+}
+
+main {
+  background-color: rgb(94, 0, 0);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(16, 4, 82);
+}
+
+footer address {
+  color: white;
+}
+
+footer p {
+  color: darkgoldenrod;
+}
+
+.animados {
+  color: rgb(16, 4, 82);
+  font-size: 30px;
+  padding: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(206, 152, 17);
+}
+
+@media screen and (min-width: 500px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+@media screen and (min-width: 630px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+  }
+}
+@media screen and (max-width: 660px) {
+  .barra ul li a {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=animados.css.map */

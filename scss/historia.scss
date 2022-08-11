@@ -1,0 +1,161 @@
+$color1:rgb(94, 0, 0);
+$color2:rgb(16, 4, 82);
+$color3:rgb(206, 152, 17);
+$color4:rgb(241, 241, 241);
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: $color2;
+
+    .logo{
+        float: left;
+        color: $color3;
+        font-size: 30px;
+        padding: 15px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .barra{
+        float: right;
+        list-style: none;
+    }
+}
+.logo span{
+    color: rgb(207, 0, 0);
+}
+.logo u{
+    text-decoration: underline;
+}
+.barra ul li{
+    display: inline-block;
+}
+.barra ul li a{
+    text-decoration: none;
+    color: $color4;
+    font-size: 25px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.barra ul li a span{
+    font-size: 15px;
+    color: rgb(207, 0, 0);
+}
+main{
+    background-color: rgb(94, 0, 0);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+footer{
+    background-color: rgb(16, 4, 82);
+}
+footer address{
+    color: white;
+}
+footer p{
+    color: darkgoldenrod;
+}
+.historia{
+    color: rgb(16, 4, 82);
+    font-size: 30px;
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(206, 152, 17);
+}
+.galeria{
+    width: 100%;
+    background-color: rgb(100, 15, 15);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    padding: 20px;
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+.item{
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.item:hover{
+    transform:scale(1.05);
+    transition: all 0.8s;
+}
+.item1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-image: url(/img/IRON\ MAN.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(206, 152, 17);
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.item2{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-image: url(/img/thor.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(206, 152, 17);
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.item3{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    background-image: url(/img/CAPITAN\ AMERICA.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(206, 152, 17);
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.item4{
+    grid-column: 4/5;
+    grid-row: 1/4;
+    background-image: url(/img/HULK.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(206, 152, 17);
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.col-3{
+    background-color: rgb(16, 4, 82);
+    color: white;
+    border: 2px solid #000;
+}
+@media screen and (min-width:500px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+@media screen and (min-width:630px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+}
+@media screen and (min-width:700px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        height: auto;
+    }
+}
+@media screen and (max-width:660px){
+    .barra ul li a{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
